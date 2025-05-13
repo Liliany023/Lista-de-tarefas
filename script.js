@@ -85,7 +85,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const todoContent = document.createElement('div');
         todoContent.className = 'todo-content';
         
-        // Checkbox
         const switchContainer = document.createElement('label');
         switchContainer.className = 'switch-container';
         
@@ -101,18 +100,15 @@ document.addEventListener('DOMContentLoaded', function() {
         switchContainer.appendChild(switchInput);
         switchContainer.appendChild(slider);
         
-        // Texto
         const todoText = document.createElement('span');
         todoText.className = `todo-text ${todo.completed ? 'completed-text' : ''}`;
         todoText.textContent = todo.text;
         
-        // Botão de deletar
         const deleteBtn = document.createElement('button');
         deleteBtn.className = 'delete-button';
         deleteBtn.innerHTML = '&times;';
         deleteBtn.addEventListener('click', () => deleteTodo(todo.id));
         
-        // Montagem
         todoContent.appendChild(switchContainer);
         todoContent.appendChild(todoText);
         todoContent.appendChild(deleteBtn);
@@ -155,8 +151,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function saveToLocalStorage() {
         localStorage.setItem('todos', JSON.stringify(todos));
     }
-    
-    // Inicialização
     updateActiveFilter();
     renderTodos();
 });
