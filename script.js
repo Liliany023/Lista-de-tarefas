@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let todos = JSON.parse(localStorage.getItem('todos')) || [];
     let currentFilter = 'all';
     
-    // Event listeners
     addButton.addEventListener('click', addTodo);
     todoInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') addTodo();
@@ -18,8 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     filterAll.addEventListener('click', () => setFilter('all'));
     filterCompleted.addEventListener('click', () => setFilter('completed'));
     filterPending.addEventListener('click', () => setFilter('pending'));
-    
-    // Funções principais
+
     function addTodo() {
         const text = todoInput.value.trim();
         if (text) {
