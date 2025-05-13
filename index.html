@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-image"></div>
+
+    <div class="container">
+        <h1 class="title">Lista de tarefas</h1>
+
+        <div class="input-section">
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    id="todo-input" 
+                    class="input" 
+                    placeholder="Adicione uma nova tarefa"
+                >
+                <button id="add-button" class="add-button">+</button>
+            </div>
+        </div>
+        
+        <div class="list-container" id="todo-list">
+            <!-- Tarefas serão adicionadas aqui dinamicamente -->
+        </div>
+        
+        <div class="filter-section">
+            <button id="filter-all" class="filter-button active">Todas</button>
+            <button id="filter-completed" class="filter-button">Concluídas</button>
+            <button id="filter-pending" class="filter-button">Pendentes</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
