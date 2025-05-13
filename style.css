@@ -1,4 +1,4 @@
-/* Estilos base (mantidos) */
+
 body {
     margin: 0;
     padding: 20px;
@@ -120,7 +120,6 @@ body {
     color: white;
 }
 
-/* Lista de tarefas - Alterações principais */
 .list-container {
     background-color: rgba(226, 219, 199, 0.89);
     border-radius: 10px;
@@ -155,7 +154,6 @@ body {
     text-decoration: line-through;
 }
 
-/* Linha divisória mais fina */
 .divider {
     height: 0.3px; /* Linha mais fina */
     background-color: #cd8665;
@@ -180,7 +178,6 @@ body {
     color: #7a3212;
 }
 
-/* Slider personalizado - Alterações principais */
 .switch-container {
     position: relative;
     margin-right: 10px;
@@ -210,7 +207,6 @@ body {
     border-radius: 24px;
 }
 
-/* Bolinha inicialmente à esquerda */
 .slider:before {
     position: absolute;
     content: "";
@@ -225,33 +221,30 @@ body {
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
-/* Bolinha move para direita quando ativado */
 input:checked + .slider:before {
     transform: translate(26px, -50%);
 }
 
-/* Cores específicas para cada tarefa na ordem especificada */
 .todo-item:nth-child(5n+1) .slider {
-    background-color: #cd6e3c; /* Primeira tarefa */
+    background-color: #cd6e3c; 
 }
 
 .todo-item:nth-child(5n+2) .slider {
-    background-color: #e79769; /* Segunda tarefa */
+    background-color: #e79769; 
 }
 
 .todo-item:nth-child(5n+3) .slider {
-    background-color: #5b9a91; /* Terceira tarefa */
+    background-color: #5b9a91; 
 }
 
 .todo-item:nth-child(5n+4) .slider {
-    background-color: #1a777f; /* Quarta tarefa */
+    background-color: #1a777f; 
 }
 
 .todo-item:nth-child(5n+5) .slider {
-    background-color: #135472; /* Quinta tarefa */
+    background-color: #135472; 
 }
 
-/* Cores quando ativado (mais escuras) */
 .todo-item:nth-child(5n+1) input:checked + .slider {
     background-color: #a85930;
 }
@@ -272,7 +265,6 @@ input:checked + .slider:before {
     background-color: #0e4358;
 }
 
-/* Mensagem vazia */
 .empty-message {
     text-align: center;
     color: #963e17;
